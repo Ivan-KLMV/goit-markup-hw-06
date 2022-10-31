@@ -73,9 +73,9 @@
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <form name="order-form">
+            <form name="order-form" class="order-form">
               <p>Залиште свої дані, ми вам передзвонимо</p>
-              <label for="name"> Ім'я</label>
+              <label for="name">Ім'я</label>
               <input type="text" name="name" id="name" />
               <label for="phone">Телефон</label>
               <input type="tel" name="phone" id="phone" />
@@ -87,12 +87,17 @@
                 id="coment"
                 placeholder="Введіть текст"
               ></textarea>
-              <input type="checkbox" name="agreement" id="agreement" />
-              <label for="agreement"
+              <input
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+                class="agree-checkbox"
+              />
+              <label for="agreement" class="agree-text"
                 >Погоджуюся з розсилкою та приймаю
                 <a href="">Умови договору</a></label
               >
-              <button type="submit">Відправити</button>
+              <button type="submit" class="bttn">Відправити</button>
             </form>
           </div>
         </div>
