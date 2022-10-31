@@ -217,6 +217,7 @@ a,
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
+  font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -236,7 +237,28 @@ a,
 }
 
 .order-form .agree-checkbox {
-  width: auto;
+  position: absolute;
+  appearance: none;
+  height: min-content;
+  width: min-content;
+  outline: 1px solid tomato;
+  margin: 0;
+}
+
+.order-form .agree-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.agree-text a {
+  display: inline-block;
+  color: var(--accent-blue-color);
+  text-decoration: underline;
+}
+
+.order-form .bttn {
+  padding: 10px 52px;
 }
 .benefit {
   margin-top: 0;
@@ -350,8 +372,7 @@ a,
   letter-spacing: 0.03em;
 }
 
-.hero.bttn,
-.subscription .bttn {
+.bttn {
   padding: 10px 32px;
   font-weight: 700;
   line-height: 1.88;
@@ -366,6 +387,10 @@ a,
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms var(--cubic-bezier);
+}
+
+.hero.bttn {
+  background-color: var(--accent-blue-color);
 }
 
 .bttn:hover,
@@ -553,10 +578,12 @@ a,
   border: 1px solid var(--accent-blue-color);
 }
 .subscription .bttn {
-  width: 200px;
-  height: 50px;
-  padding: 10px 28px;
-  /* outline: 1px solid white; */
+  padding: 10px 30px;
+}
+
+.send-icon {
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .footer .link-icon {
