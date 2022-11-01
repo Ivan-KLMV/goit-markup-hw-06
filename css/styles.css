@@ -258,13 +258,26 @@ a,
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order-form .agree-checkbox {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* .order-form .agree-checkbox {
   position: absolute;
   appearance: none;
   height: min-content;
   width: min-content;
   margin: 0;
-}
+} */
 
 .order-form .agree-text {
   /* display: inline-block; */
