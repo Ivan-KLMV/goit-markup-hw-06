@@ -55,7 +55,7 @@ ul {
 
 a,
 .link {
-  display: block;
+  /* display: block; */
   color: inherit;
   text-decoration: none;
   font-style: normal;
@@ -263,7 +263,6 @@ a,
   appearance: none;
   height: min-content;
   width: min-content;
-  outline: 1px solid tomato;
   margin: 0;
 }
 
@@ -273,10 +272,34 @@ a,
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  outline: 1px solid salmon;
+}
+
+.order-form .agree-text {
+  display: flex;
+  align-items: center;
+}
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-left: 12px;
+  margin-right: 8px;
+  border: 2px solid var(--text-color);
+  border-radius: 2px;
+  transition: border 250ms var(--cubic-bezier),
+    backgroun-color 250ms var(--cubic-bezier);
+}
+
+.agree-checkbox:checked ~ .check-icon {
+  border-color: var(--accent-blue-color);
+  background-color: var(--accent-blue-color);
+}
+
+.agree-checkbox:focus ~ .check-icon {
+  outline: 1px solid var(--accent-blue-color);
 }
 .agree-text a {
-  display: inline-block;
+  margin-left: 5px;
   color: var(--accent-blue-color);
   text-decoration: underline;
 }
@@ -531,6 +554,7 @@ a,
 .footer > .container {
   display: flex;
   gap: 93px;
+  align-items: baseline;
 }
 
 .footer > .container .logo {
@@ -567,7 +591,8 @@ a,
   margin-bottom: 20px;
 }
 
-.subscription p {
+.subscription label {
+  display: block;
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -594,6 +619,10 @@ a,
   color: rgba(255, 255, 255, 0.6);
 }
 
+.subscription > div {
+  display: flex;
+  align-items: flex-end;
+}
 .field:focus,
 .form-block input:focus,
 .order-form textarea:focus {

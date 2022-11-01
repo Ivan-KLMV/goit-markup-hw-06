@@ -102,14 +102,15 @@
                 id="coment"
                 placeholder="Введіть текст"
               ></textarea>
-              <input
-                type="checkbox"
-                name="agreement"
-                id="agreement"
-                class="agree-checkbox"
-              />
-              <label for="agreement" class="agree-text"
-                >Погоджуюся з розсилкою та приймаю
+              <label class="agree-text"
+                ><input
+                  type="checkbox"
+                  name="agreement"
+                  class="agree-checkbox"
+                /><svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                Погоджуюся з розсилкою та приймаю
                 <a href="">Умови договору</a></label
               >
               <button type="submit" class="bttn">Відправити</button>
@@ -578,15 +579,20 @@
         </div>
         <div>
           <form class="subscription">
-            <p>Підпишіться на розсилку</p>
-            <input type="text" placeholder="E-mail" class="field" /><button
-              type="submit"
-              class="bttn"
-            >
-              Підписатися<svg width="24" height="24" class="send-icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <label for="field">Підпишіться на розсилку</label>
+            <div>
+              <input
+                type="text"
+                placeholder="E-mail"
+                class="field"
+                name="field"
+                id="field"
+              /><button type="submit" class="bttn">
+                Підписатися<svg width="24" height="24" class="send-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
