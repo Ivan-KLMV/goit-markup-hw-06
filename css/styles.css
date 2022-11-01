@@ -229,9 +229,6 @@ a,
   color: var(--secondary-text-color);
 }
 
-.order-form label {
-  border: ;
-}
 .form-block input,
 .order-form textarea {
   width: 100%;
