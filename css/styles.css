@@ -268,31 +268,21 @@ a,
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* .order-form .agree-checkbox {
-  position: absolute;
-  appearance: none;
-  height: min-content;
-  width: min-content;
-  margin: 0;
-} */
 
 .order-form .agree-text {
-  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.order-form .agree-text {
-  display: flex;
-  align-items: center;
-}
 .check-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-left: 12px;
   margin-right: 8px;
   border: 2px solid var(--text-color);
   border-radius: 2px;
@@ -601,7 +591,7 @@ a,
   margin-bottom: 20px;
 }
 
-.subscription label {
+.subscription p {
   display: block;
   margin-bottom: 20px;
   font-family: "Roboto";
